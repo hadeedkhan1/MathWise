@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathWise Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> <span class="highlight">MathWise Solver</span></h1>
+    </header>
+    <main>
+        <div class="container">
+            <button id="textInputBtn" onclick="toggleInput('text')">Text Input</button>
+            <button id="photoInputBtn" onclick="toggleInput('photo')">Photo Input</button>
+        </div>
+        <div id="textInput" class="container">
+            <input type="text" id="mathInput" placeholder="Enter your math problem">
+            <button onclick="solveMath('text')">Solve</button>
+        </div>
+        <div id="photoInput" class="container" style="display: none;">
+            <input type="file" accept="image/*" id="imageInput" onchange="readImage()">
+            <button onclick="solveMath('photo')">Solve</button>
+        </div>
+        <div id="stepsDisplay" class="container">
+            <!-- Steps will be displayed here -->
+        </div>
+        <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "Wq3xGMnnV2j22fT4PTNPN",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="Wq3xGMnnV2j22fT4PTNPN"
+        domain="www.chatbase.co"
+        defer>
+        </script>
+    </main>
+    <script src="script.js">
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"
+    </script>
+</body>
+</html>

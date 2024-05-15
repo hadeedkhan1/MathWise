@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chat</title>
+    <style>
+      #chatbox {
+        width: 500px;
+        height: 400px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-top: 20px;
+        overflow-y: scroll;
+      }
+      #input {
+        width: 500px;
+        height: 30px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AI Chat</h1>
+    <div id="chatbox"></div>
+    <input id="input" type="text" placeholder="Type your message here..." />
+    <button id="send">Send</button>
+    <script>
+      const apiKey = 'sk-proj-I2sYxIj85u4oWzIDyVVHT3BlbkFJoNB4dUX5f4WtBIcasWgC';
+      const chatbox = document.getElementById('chatbox');
+      const input = document.getElementById('input');
+      const sendButton = document.getElementById('send');
+
+      sendButton.addEventListener('click', () => {
+        const message = input.value;
+        if (message.trim() !== '') {
+          addMessage('user', message);
+          fetch('https://api.openai.com/v1/completions', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${apiKey}`
+            },
+            body: JSON.stringify({
+              model: 'gpt-3.5-turbo',
+              prompt: message,
+              max_tokens: 100,
+              temperature: 0.5
+            })
+          })
+          .then(response => response.json())
+          .then(data => {
+            addMessage('ai', data.choices[0].text);
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            addMessage('ai', 'Sorry, I am unable to process your request right now.');
+          });
+          input.value = '';
+        }
+      });
+
+      function addMessage(sender, message) {
+        const div = document.createElement('div');
+        div.classList.add(sender);
+        div.textContent = message;
+        chatbox.appendChild(div);
+        chatbox.scrollTop = chatbox.scrollHeight;
+      }
+      
+    </script>
+  </body>
+</html>
