@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Updates - MathWise</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      background-color: #000; /* Black background */
+      color: #fff; /* White text */
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+    header nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    header nav ul li {
+      margin-right: 20px;
+    }
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    header nav ul li a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .section {
+      background-color: #000;
+      padding: 80px 20px;
+      margin-bottom: 100px;
+    }
+    .section h2 {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+    .highlight {
+      color: red;
+    }
+    .update {
+      margin-bottom: 30px;
+    }
+    .update h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .update p {
+      display: none;
+      margin-top: 10px;
+      background-color: #444;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .cta-button {
+      background-color: #fff;
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .cta-button:hover {
+      background-color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span class="highlight">MathWise:</span> <a href="#">Your AI Math Assistant</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="updates.html">Updates</a></li>
+      </ul>
+      <ul>
+        <li><a href="chat.html" class="cta-button">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="updates" class="section">
+      <div class="container">
+        <h2><a>Website & AI Updates</a></h2>
+        <div class="update">
+          <h3 onclick="toggleUpdate(this)">July 2024: Improved AI Feedback</h3>
+          <p>We're excited to announce an update to our AI's feedback system, providing even more detailed and personalized guidance for your math problems. This improvement helps you understand where you went wrong and how to correct it more effectively.</p>
+        </div>
+        <div class="update">
+          <h3 onclick="toggleUpdate(this)">June 2024: New User Interface</h3>
+          <p>We've revamped our user interface to make it more intuitive and user-friendly. The new design ensures that you can navigate through MathWise effortlessly, finding the assistance you need quickly and easily.</p>
+        </div>
+        <div class="update">
+          <h3 onclick="toggleUpdate(this)">May 2024: Partnership with Mathnasium</h3>
+          <p>We're thrilled to announce our partnership with Mathnasium NorthWest Hills, Westlake, and Pflugerville. This collaboration aims to provide you with the best math support, both online and in-person. Visit Mathnasium for additional help and resources.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    function toggleUpdate(element) {
+      const p = element.nextElementSibling;
+      p.style.display = p.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
