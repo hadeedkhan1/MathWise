@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - MathWise</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      background-color: #000; /* Black background */
+      color: #fff; /* White text */
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+    header nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    header nav ul li {
+      margin-right: 20px;
+    }
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    header nav ul li a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .section {
+      background-color: #000;
+      padding: 80px 20px;
+      margin-bottom: 100px;
+    }
+    .section h2 {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+    .highlight {
+      color: red;
+    }
+    .cta-button {
+      background-color: #fff;
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      color: #000;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .cta-button:hover {
+      background-color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span class="highlight">MathWise:</span> <a href="#">Your AI Math Assistant</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <ul>
+        <li><a href="chat.html" class="cta-button">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2><a>About Us</a></h2>
+        <p>MathWise was founded with a vision to enhance the learning experience of high school students struggling with mathematics. Our journey began in collaboration with the LASA High School math department, aiming to provide students with an innovative AI-powered tool that offers step-by-step guidance, personalized tips, and detailed feedback on their math problems. We believe in leveraging AI technology to support education, making complex mathematical concepts more accessible and understandable.</p>
+        <h2><a>The Creators</a></h2>
+        <p><strong>Hadeed Khan:</strong> Passionate about education and technology, Hadeed Khan co-founded MathWise to bridge the gap between students and effective math learning. With a background in computer science, Hadeed brings innovative AI solutions to the educational sphere.</p>
+        <p><strong>Jeffrey Norman:</strong> With a deep interest in mathematics and its teaching methodologies, Jeffrey Norman co-founded MathWise to help students excel in math. His experience in math education ensures that the AI tool provides accurate and helpful guidance.</p>
+      </div>
+    </section>
+    <section id="sponsors" class="section">
+      <div class="container">
+        <h2><a>Our Sponsor</a></h2>
+        <div>
+          <a href="https://www.mathnasium.com/math-centers/northwesthills/" target="_blank">
+            <img src="Mathnasium_Logo.jpg" alt="Mathnasium Logo" style="width: 200px; height: auto;" />
+          </a>
+          <p>Sponsored by Mathnasium NorthWest Hills, Westlake and Pflugerville</p>
+          <p>Phone: (512) 837-6284</p>
+          <a href="https://www.mathnasium.com/math-centers/northwesthills/" class="cta-button" target="_blank">Visit Mathnasium for in-person support</a>
+          <p><a href="mailto:support@mathwise.help">If you would like to help support our accessible learning resource, please email us!</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section">
+      <div class="container">
+        <h2><a>Contact Us</a></h2>
+        <p>Have questions or feedback? Please reach out to us</p>
+        <a href="mailto:support@mathwise.help" class="cta-button">Email us at Support@MathWise.help</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
