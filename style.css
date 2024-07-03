@@ -124,6 +124,7 @@ button {
 
 button:hover {
     background-color: #ff0000; /* Light gray hover */
+    color:#fff;
 }
 
 /* Adjustments for Features Section */
