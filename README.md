@@ -35,7 +35,7 @@ Mathwise is on a mission to revolutionize the way students learn math. Our team 
 
 ## Get in Touch
 
-Have questions or feedback about Mathwise? We'd love to hear from you! Contact us at [mathwise@usa.com](mailto:contact@usa.com) or visit our website for more information.
+Have questions or feedback about Mathwise? We'd love to hear from you! Contact us at [Support@mathwise.help](mailto:Support@mathwise.help) or visit our website for more information.
 
 ## Let's Master Math Together!
 
