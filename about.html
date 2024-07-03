@@ -9,127 +9,135 @@
     body {
       margin: 0;
       padding: 0;
-      font-size: 18px;
-      background-color: #000; /* Black background */
-      color: #fff; /* White text */
-      font-family: 'Montserrat', sans-serif;
-      line-height: 1.6;
+        font-size: 18px;
+
     }
     header {
-      background-color: #000;
+      background-color: #f0f0f0;
       padding: 20px;
-      text-align: center;
+        
     }
-    header nav ul {
-      list-style-type: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
+    main {
+      padding: 20px;
     }
-    header nav ul li {
-      margin-right: 20px;
-    }
-    header nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 16px;
-      padding: 10px 15px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    header nav ul li a:hover {
-      background-color: #333;
-      color: #fff;
+    /* Increased space between sections */
+    section {
+      margin-bottom: 75px;
     }
     .container {
       max-width: 800px;
       margin: 0 auto;
-      padding: 20px;
-      text-align: center;
+      padding: 0 20px;
     }
-    .section {
-      background-color: #000;
-      padding: 80px 20px;
-      margin-bottom: 100px;
-    }
-    .section h2 {
-      font-size: 35px;
-      margin-bottom: 20px;
-    }
-    .highlight {
-      color: red;
-    }
-    .cta-button {
-      background-color: #fff;
-      padding: 15px 30px;
-      font-size: 20px;
-      border: none;
-      border-radius: 5px;
-      color: #000;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      display: inline-block;
-      margin-top: 20px;
-    }
-    .cta-button:hover {
-      background-color: #ff0000;
-    }
+      h2{
+          font-size: 35px;
+          margin-bottom: 10px;
+      }
+  a {
+  display: block;
+  text-decoration: none;
+  color: #fff; /* Default color */
+  transition: color 0.6s ease; /* Smooth transition for color change */
+}
+      b {
+  display: block;
+  text-decoration: none;
+  color: #000000; /* Default color */
+  transition: color 0.6s ease; /* Smooth transition for color change */
+}
   </style>
 </head>
 <body>
   <header>
-    <h1><span class="highlight">MathWise:</span> <a href="#">Your AI Math Assistant</a></h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-      <ul>
-        <li><a href="chat.html" class="cta-button">Get Started</a></li>
-      </ul>
-    </nav>
+    <h1><span class="highlight">MathWise:</span> <b>Your AI Math Assistant</b></h1>
+<nav>
+  <ul>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#sponsors">Sponsors</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+  <ul>
+    <li><a href="chat.html" class="cta-button">Get Started</a></li>
+  </ul>
+</nav>
+
   </header>
   <main>
-    <section id="about" class="section">
+    <section id="about" class="about-section">
       <div class="container">
         <h2><a>About Us</a></h2>
-        <p>MathWise was founded with a vision to enhance the learning experience of high school students struggling with mathematics. Our journey began in collaboration with the LASA High School math department, aiming to provide students with an innovative AI-powered tool that offers step-by-step guidance, personalized tips, and detailed feedback on their math problems. We believe in leveraging AI technology to support education, making complex mathematical concepts more accessible and understandable.</p>
-        <h2><a>The Creators</a></h2>
-        <p><strong>Hadeed Khan:</strong> Passionate about education and technology, Hadeed Khan co-founded MathWise to bridge the gap between students and effective math learning. With a background in computer science, Hadeed brings innovative AI solutions to the educational sphere.</p>
-        <p><strong>Jeffrey Norman:</strong> With a deep interest in mathematics and its teaching methodologies, Jeffrey Norman co-founded MathWise to help students excel in math. His experience in math education ensures that the AI tool provides accurate and helpful guidance.</p>
+        <p>At MathWise, we believe in using AI not to hurt students' education, but to assist it and help it grow. In collaboration with the LASA High School math department, our program helps you get a push when starting math problems. Our application scans the problem and any work given and gives you tips like how to start, what formula to use, and where you went wrong.</p>
+          <a href="about.html" class="cta-button" target="_blank">Learn more about us</a>
       </div>
     </section>
-    <section id="sponsors" class="section">
+    <section id="features" class="features-section">
       <div class="container">
-        <h2><a>Our Sponsor</a></h2>
-        <div>
-          <a href="https://www.mathnasium.com/math-centers/northwesthills/" target="_blank">
-            <img src="Mathnasium_Logo.jpg" alt="Mathnasium Logo" style="width: 200px; height: auto;" />
-          </a>
-          <p>Sponsored by Mathnasium NorthWest Hills, Westlake and Pflugerville</p>
-          <p>Phone: (512) 837-6284</p>
-          <a href="https://www.mathnasium.com/math-centers/northwesthills/" class="cta-button" target="_blank">Visit Mathnasium for in-person support</a>
-          <p><a href="mailto:support@mathwise.help">If you would like to help support our accessible learning resource, please email us!</a></p>
+        <h2>Features</h2>
+<center>
+<ul>
+  <li class="step">Step-by-Step Assistance</li>
+  <li class="step">Personalized Tips and Help</li>
+  <li class="step">Teacher-Endorsed Solutions</li>
+  <li class="step">Powered by the Latest GPT-4 Model</li>
+</ul>
+</center>
+
+      </div>
+    </section>
+    <section id="how-it-works" class="how-it-works-section">
+      <div class="container">
+        <h2><a>How it works </a></h2>
+        <p>MathWise uses an image-to-text software plugin and uses a GPT-4o API to read, process, and give feedback on progress and on the question.</p>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <h2><a>Testimonials</a></h2>
+        <div class="testimonial">
+          <p>"MathWise helped me understand Precal and helped me score my first A in a Precal Test."</p>
+          <p class="author">- Jose Aviles (Junior)</p>
+        </div>
+        <div class="testimonial">
+          <p>"I never thought math could be so straightforward. Thanks to MathWise, I got an A in Calculus and felt good for the AP exam."</p>
+          <p class="author">- Abdur-Rahman Sharif (Junior)</p>
+        </div>
+         <div class="testimonial">
+          <p>"The MathWise AI helped me understand everything I needed better than my Tutor did. Thanks to the AI, I passed Precal"</p>
+          <p class="author">- Emiliano Holubetz (Junior)</p>
         </div>
       </div>
     </section>
-    <section id="contact" class="section">
+    <section id="sponsors" class="sponsors-section">
+  <div class="container">
+    <h2><a>Our Sponsor</a></h2>
+    <div>
+      <a href="https://www.mathnasium.com/math-centers/northwesthills/" target="_blank">
+        <img src="Mathnasium_Logo.jpg" alt="Mathnasium Logo" style="width: 200px; height: auto;" />
+      </a>
+      <p>Sponsored by Mathnasium NorthWest Hills, Westlake and Pflugerville</p>
+      <p>Phone: (512) 837-6284</p>
+      <a href="https://www.mathnasium.com/math-centers/northwesthills/" class="cta-button" target="_blank">Visit Mathnasium for in-person support</a>
+      <p><a href="mailto:support@mathwise.help">If you would like to help support our accessible learning resource, please email us!</a></p>
+    </div>
+  </div>
+</section>
+    <section id="contact" class="contact-section">
       <div class="container">
         <h2><a>Contact Us</a></h2>
         <p>Have questions or feedback? Please reach out to us</p>
         <a href="mailto:support@mathwise.help" class="cta-button">Email us at Support@MathWise.help</a>
       </div>
     </section>
-  </main>
-</body>
-</html>
-     <script
+    <section id="credits" class="credits-section">
+      <div class="container">
+        <h2><a>MathWise</a></h2>
+        <p>By Hadeed Khan & Jeffrey Norman</p>
+      </div>
+    </section>
+      <script
           type="module"
           src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"
       ></script>
