@@ -151,3 +151,6 @@ button:hover {
 .highlight {
     color: red; /* Change the color as desired */
 }
+a:hover {
+  color: #ff0000; /* Brighter Star Yellow on hover */
+}
