@@ -98,12 +98,13 @@
       border-radius: 5px;
       color: #000;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, color 0.3s ease;
       display: inline-block;
       margin-top: 20px;
     }
     .cta-button:hover {
       background-color: #ff0000;
+      color: #000; /* Change text color to black on hover */
     }
     body {
       margin: 0;
@@ -188,7 +189,7 @@
       padding: 10px;
     }
     /* Added space between the about section and columns */
-    .about-section p {
+    .about-section{
       margin-bottom: 40px;
     }
   </style>
@@ -202,7 +203,7 @@
     <section id="about" class="about-section">
       <div class="container">
         <h2>About Us</h2>
-        <p>MathWise is dedicated to revolutionizing math education through AI technology. Partnered with LASA High School's math department, MathWise provides personalized, step-by-step guidance using advanced GPT-4 technology to enhance learning experiences.</p>
+        <p class="about-section">MathWise is dedicated to revolutionizing math education through AI technology. Partnered with LASA High School's math department, MathWise provides personalized, step-by-step guidance using advanced GPT-4 technology to enhance learning experiences.</p>
         
         <div class="columns">
           <div class="column">
