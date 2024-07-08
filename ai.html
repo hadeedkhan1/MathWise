@@ -4,21 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>ChatGPT Chatbot</title>
+  <title>MathWise Chatbot Prototype</title>
 </head>
 <body>
-
+<h1><a href="chat.html">NOTE: This is a DISCONTINUED Prototype Model. To go to our latest model, please click here.</a></h1>
 <div class="chat-container">
   <div id="chat" class="chat-box"></div>
   <input type="text" id="user-input" placeholder="Type your message...">
   <button onclick="sendMessage()">Send</button>
 </div>
 
-<script src="scriptai.js">
-  
-</script>
 </body>
 </html>
 <script
-    
+    document.addEventListener('DOMContentLoaded', function () {
+  // Initial system message
+  appendMessage('ChatGPT Bot', 'Hello! How can I help you today?');
+
+  // Function to send user message to the server
+  window.sendMessage = function () {
+    const userInput = document.getElementById('user-input').value;
+    if (userInput.trim() === '') return;
+
+    appendMessage('You', userInput);
+
+    // Make a request to the server
+    fetch(`/chat?message=${encodeURIComponent(userInput)}`)
+      .then(response => response.json())
+      .then(data => {
+        const botReply = data.reply || 'I have no response.';
+        appendMessage('ChatGPT Bot', botReply);
+      })
+      .catch(error => {
+        console.error('Error:', error.message);
+        appendMessage('ChatGPT Bot', 'Oops! Something went wrong.');
+      });
+
+    // Clear the user input field
+    document.getElementById('user-input').value = '';
+  };
+
+  // Function to append a message to the chat box
+  function appendMessage(sender, message) {
+    const chatBox = document.getElementById('chat');
+    const messageElement = document.createElement('div');
+    messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
+    chatBox.appendChild(messageElement);
+
+    // Scroll to the bottom of the chat box
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
+});
 ></script>
