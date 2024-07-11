@@ -5,17 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MathWise App</title>
   <link rel="stylesheet" href="style.css">
- <style>
+  <style>
     body {
       margin: 0;
       padding: 0;
-        font-size: 18px;
-
+      font-size: 18px;
     }
     header {
       background-color: #f0f0f0;
       padding: 20px;
-        
     }
     main {
       padding: 20px;
@@ -29,64 +27,83 @@
       margin: 0 auto;
       padding: 0 20px;
     }
-      h2{
-          font-size: 35px;
-          margin-bottom: 10px;
-      }
-  a {
-  display: block;
-  text-decoration: none;
-  color: #fff; /* Default color */
-  transition: color 0.6s ease; /* Smooth transition for color change */
-}
-      b {
-  display: block;
-  text-decoration: none;
-  color: #000000; /* Default color */
-  transition: color 0.6s ease; /* Smooth transition for color change */
-}
-footer {
-    text-align: center;
-    font-size: 0.8em; /* Adjust the font size to make it smaller */
-    margin: 20px 0; /* Adjust the margin to position the footer */
-}
-
-footer p {
-    margin: 5px 0; /* Adjust the spacing between paragraphs */
-}
-
-footer a {
-    color: #fff; /* Adjust the link color if necessary */
-    text-decoration: none; /* Remove underline from links */
-}
-
-footer a:hover {
-    text-decoration: underline; /* Underline links on hover */
-}
-   .cta-button:hover {
+    h2 {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: #fff; /* Default color */
+      transition: color 0.6s ease; /* Smooth transition for color change */
+    }
+    b {
+      text-decoration: none;
+      color: #000000; /* Default color */
+      transition: color 0.6s ease; /* Smooth transition for color change */
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8em; /* Adjust the font size to make it smaller */
+      margin: 20px 0; /* Adjust the margin to position the footer */
+    }
+    footer p {
+      margin: 5px 0; /* Adjust the spacing between paragraphs */
+    }
+    footer a {
+      color: #fff; /* Adjust the link color if necessary */
+      text-decoration: none; /* Remove underline from links */
+    }
+    footer a:hover {
+      text-decoration: underline; /* Underline links on hover */
+    }
+    .cta-button {
+      display: block;
+      width: 200px; /* Adjust button width as needed */
+      margin: 20px auto; /* Center the button */
+      padding: 10px;
+      text-align: center;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
       background-color: #ff0000;
       color: #fff; /* Change text color to white on hover */
     }
+    .secondary-links {
+      text-align: center; /* Center the links container */
+      margin-top: 20px;
+    }
+    .secondary-links a {
+      margin: 0 10px; /* Add space between the links */
+      color: #007bff; /* Adjust link color if necessary */
+      text-decoration: none; /* Remove underline from links */
+      transition: color 0.3s ease;
+    }
+    .secondary-links a:hover {
+      color: #ff0000; /* Change link color on hover */
+    }
     .logo {
-  height: 40px; /* Adjust the height as needed */
-  width: auto; /* Automatically adjust width */
-  margin: 10px; /* Adjust margins to position the logo */
-}
+      height: 40px; /* Adjust the height as needed */
+      width: auto; /* Automatically adjust width */
+      margin: 10px; /* Adjust margins to position the logo */
+    }
   </style>
 </head>
 <body>
   <header>
-     <img src="mathwiselogo.png" alt="MathWise Logo" class="logo">
+    <img src="mathwiselogo.png" alt="MathWise Logo" class="logo">
     <h1><span class="highlight">MathWise:</span> Your AI Math Assistant</h1>
   </header>
   <a href="chat.html" class="cta-button">Chat with MathWise</a>
-  <div class="links">
+  <div class="secondary-links">
     <a href="updates.html">Updates</a>
     <a href="about.html">About</a>
     <a href="mailto:support@mathwise.help">Contact</a>
   </div>
-  <div class="app-footer">
-    &copy; 2024 MathWise
-  </div>
+  <footer>
+    <p>&copy; 2024 MathWise</p>
+  </footer>
 </body>
 </html>
