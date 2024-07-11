@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - MathWise</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p>
+      All conversations with the AI are recorded and trained on for quality and training purposes and for the safety of the user and organization.
+    </p>
+  </div>
+</body>
+</html>
