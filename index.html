@@ -84,6 +84,20 @@ footer a:hover {
   width: auto; /* Automatically adjust width */
   margin: 10px; /* Adjust margins to position the logo */
 }
+         .centered-list-container {
+            display: flex;
+            justify-content: center;
+        }
+        .centered-list {
+            list-style-type: disc;
+            padding: 0;
+            text-align: center;
+          align-items: center;
+        }
+        .centered-list li {
+            display: inline-block;
+            margin-left: 20px;
+        }
   </style>
 </head>
 <body>
@@ -115,9 +129,11 @@ footer a:hover {
     </section>
     <section id="features" class="features-section">
       <div class="container">
-        <h2>Features</h2>
+        <h2><a>Features</a></h2>
+<div class="centered-list-container">
 <center>
-<ul>
+  
+<ul class="centered-list">
   <li class="step">Step-by-Step Assistance</li>
   <li class="step">Personalized Tips and Help</li>
   <li class="step">Teacher-Endorsed Solutions</li>
@@ -125,13 +141,13 @@ footer a:hover {
   <li class="step">Constant improvements and updates to AI</li>
 </ul>
 </center>
-
+</div>
       </div>
     </section>
     <section id="how-it-works" class="how-it-works-section">
       <div class="container">
         <h2><a>How it works </a></h2>
-        <p>MathWise uses an image-to-text software plugin and uses a GPT-4o API to read, process, and give feedback on progress and on the question.</p>
+        <p>MathWise uses artificial intelligence to read, process, and give feedback on progress and on the question as well as to advise the user where to study and review from in the given curriculum.</p>
       </div>
     </section>
     <section id="testimonials" class="testimonials-section">
@@ -157,11 +173,13 @@ footer a:hover {
     <div>
       <a href="https://www.mathnasium.com/math-centers/northwesthills/" target="_blank">
         <img src="Mathnasium_Logo.jpg" alt="Mathnasium Logo" style="width: 200px; height: auto;" />
+        <br>
       </a>
       <p>For in-person or human assisted online support, we recommend Mathnasium of Northwest Hills or Westlake (our sponsors). You can visit their centers or enroll in online personalized tutoring below.</p>
-      <p>Phone: (512) 837-6284: Extension 1 for NorthWest Hills or Extension 2 for WestLake</p>
+      <p> <i>Phone: (512) 837-6284: Extension 1 for NorthWest Hills or Extension 2 for WestLake </i></p>
       <a href="https://www.mathnasium.com/math-centers/northwesthills/" class="cta-button" target="_blank">Visit Mathnasium for in-person support</a>
       <p><a href="mailto:support@mathwise.help">If you would like to help support our accessible learning resource, please email us!</a></p>
+      <br>
     </div>
   </div>
 </section>
