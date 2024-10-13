@@ -2,43 +2,65 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2T5EYE7E8W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-2T5EYE7E8W');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2T5EYE7E8W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2T5EYE7E8W');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="cNeMaHGLpNCsYBtuzSoe6wJn-UVwJJt58MmKuEeNgBY" />
     <title>Talk to Your Free AI Math Tutor Now</title>
     <meta name="description" content="Discover MathWise, the ultimate AI math assistant designed to enhance your learning experience. Partnered with LASA High School's math department, our innovative tool provides personalized, step-by-step guidance using advanced GPT-4 technology. Whether you're struggling with Precalculus or preparing for the AP Calculus exam, MathWise helps you understand complex problems, offering tips and feedback to improve your skills. Endorsed by teachers and praised by students, MathWise is your key to achieving better grades in math. Get started today and transform your math journey with AI-powered support.">
-      <link rel="icon" type="x-icon" href="favicon.ico">
-  <style>
-      .cta-button {
-    background-color: #ff0000; /* White button */
-    padding: 5px 10px;
-    font-size: 15px;
-    border: none;
-    border-radius: 5px;
-    color: #FFF; /* White text */
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    display: inline-block; /* Ensure button doesn't take full width */
-    margin-top: 20px; /* Add margin to separate button from text */
-    font-family: 'Montserrat', sans-serif;
-}
+    <link rel="icon" type="x-icon" href="favicon.ico">
+    <style>
+        .cta-button {
+            background-color: #ff0000;
+            padding: 5px 10px;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            color: #FFF;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .cta-button:hover {
+            background-color: #FFF;
+            color: #ff0000;
+        }
 
-.cta-button:hover {
-    background-color: #FFF; /* Light white hover */
-    color:#ff0000;
-}
-  </style>
+        /* Styling for the calculator buttons */
+        .math-button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 14px;
+            width: 80px; /* Small button width */
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
 
+        .math-button:hover {
+            background-color: #dcdcdc;
+        }
+
+        /* Styling the input field */
+        #inputField {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
-    
+
 <body>
 
 <div id="flat-chat"></div>
@@ -61,13 +83,40 @@
       v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
   })(document, 'script');
 </script>
-    
-  <a href="index.html" class="cta-button">Home</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFLqHBK6a8_Ht0f1f9BUOCH5PkMZI4uecU9zLRTC_njJXHmA/viewform?usp=sf_link" class="cta-button">How can we improve?</a>
-    <a href="updates.html" class="cta-button">Version: 2.2</a>
-    <a href="tos.html" class="cta-button">By accessing Mathwise AI, you agree to the Terms of Service</a>
+
+<!-- Calculator input -->
+<h2>Calculator Input</h2>
+<input type="text" id="inputField" placeholder="Type here...">
+
+<!-- Math function buttons -->
+<div>
+    <button class="math-button" onclick="insertFunction('sqrt(')">√</button>
+    <button class="math-button" onclick="insertFunction('^2')">x²</button>
+    <button class="math-button" onclick="insertFunction('^3')">x³</button>
+    <button class="math-button" onclick="insertFunction('sin(')">sin</button>
+    <button class="math-button" onclick="insertFunction('cos(')">cos</button>
+    <button class="math-button" onclick="insertFunction('tan(')">tan</button>
+    <button class="math-button" onclick="insertFunction('log(')">log</button>
+    <button class="math-button" onclick="insertFunction('ln(')">ln</button>
+    <button class="math-button" onclick="insertFunction('(')">(</button>
+    <button class="math-button" onclick="insertFunction(')')">)</button>
+    <button class="math-button" onclick="insertFunction('pi')">π</button>
+    <button class="math-button" onclick="insertFunction('e')">e</button>
+</div>
+
+<!-- Navigation buttons -->
+<a href="index.html" class="cta-button">Home</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeFLqHBK6a8_Ht0f1f9BUOCH5PkMZI4uecU9zLRTC_njJXHmA/viewform?usp=sf_link" class="cta-button">How can we improve?</a>
+<a href="updates.html" class="cta-button">Version: 2.2</a>
+<a href="tos.html" class="cta-button">By accessing Mathwise AI, you agree to the Terms of Service</a>
+
+<script>
+    function insertFunction(mathFunction) {
+        const inputField = document.getElementById("inputField");
+        inputField.value += mathFunction;
+        inputField.focus();  // Focus back on the input field after insertion
+    }
+</script>
 
 </body>
 </html>
-
-
