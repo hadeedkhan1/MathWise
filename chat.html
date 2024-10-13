@@ -50,14 +50,6 @@
         .math-button:hover {
             background-color: #dcdcdc;
         }
-
-        /* Styling the input field */
-        #inputField {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
     </style>
 </head>
 
@@ -84,10 +76,6 @@
   })(document, 'script');
 </script>
 
-<!-- Calculator input -->
-<h2>Calculator Input</h2>
-<input type="text" id="inputField" placeholder="Type here...">
-
 <!-- Math function buttons -->
 <div>
     <button class="math-button" onclick="insertFunction('sqrt(')">√</button>
@@ -112,9 +100,13 @@
 
 <script>
     function insertFunction(mathFunction) {
-        const inputField = document.getElementById("inputField");
-        inputField.value += mathFunction;
-        inputField.focus();  // Focus back on the input field after insertion
+        const chatInput = document.querySelector('iframe').contentWindow.document.querySelector('textarea');
+        if (chatInput) {
+            chatInput.value += mathFunction;
+            chatInput.focus();
+        } else {
+            console.log("Chat input not found");
+        }
     }
 </script>
 
